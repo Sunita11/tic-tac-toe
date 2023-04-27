@@ -1,0 +1,70 @@
+
+.square {
+    background: #f2fdfd;
+    border: 1px solid #999;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    height: 34px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+    cursor: pointer;
+    border-radius: 4px;
+
+    @media only screen and (min-width: 600px) {
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      font-size: 48px;
+      line-height: 50px;
+    }
+  }
+  .boardRow {
+    height: 34px;
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (min-width: 600px) {
+      height: 100px;
+    }
+  }
+
+  .boardWrapper {
+    margin: 16px;
+    padding: 20px;
+    @media only screen and (min-width: 600px) {
+      margin-bottom: 24px;
+    }
+  }
+  
+  
+  .status {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .game {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .gameInfo {
+    margin-left: 20px;
+  }
+  
+  .winnerStatus {
+    color: #62bf9f;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .lostStatus {
+    color: #cf7530;
+    font-size: 20px;
+    text-align: center
+  }
+  
+  .finished .square {
+    filter: grayscale(0);
+    pointer-events: none;
+  }
